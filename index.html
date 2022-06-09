@@ -73,7 +73,7 @@
         <div class="container">
           <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
 
-          <button type="button" class="hero-btn">Заказать услугу</button>
+          <button type="button" class="hero-btn" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <section class="section">
@@ -137,19 +137,23 @@
         <div class="container">
           <h2 class="work-title">Чем мы занимаемся</h2>
           <ul class="work-list">
+            
             <li class="work-list-item">
               <img
                 src="images/img.jpg"
                 alt="Человек пишет код на ноутбуке"
                 width="370"
               />
+              <p class="work-text">десктопные приложения</p>
             </li>
+        
             <li class="work-list-item">
               <img
                 src="images/imgimg2.jpg"
                 alt="Человек разрабатывет дизайн приложения"
                 width="370"
               />
+              <p class="work-text">мобильные приложения</p>
             </li>
             <li class="work-list-item">
               <img
@@ -157,6 +161,7 @@
                 alt="Человек рисует графику"
                 width="370"
               />
+              <p class="work-text">дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -418,5 +423,17 @@
 </div>
       </div>
     </footer>
+
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal" >
+      <button type="button" class="modal-btn" data-modal-close>
+        <svg class="modal-btn-icon">
+          <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+        </svg>
+      </button>
+
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
   </body>
 </html>
